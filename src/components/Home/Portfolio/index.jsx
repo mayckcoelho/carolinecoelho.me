@@ -9,12 +9,7 @@ function Portfolio() {
     const cards = [{
         title: "Any+: Projeto MVP",
         subtitle: "Facilitador de agendamentos de serviço em Pet Shop.",
-        link: "https://medium.com/@caroline_coelho",
-        thumbnail: ThumbnailImg
-    }, {
-        title: "Any+: Projeto MVP",
-        subtitle: "Facilitador de agendamentos de serviço em Pet Shop.",
-        link: "https://medium.com/@caroline_coelho",
+        link: "https://brasil.uxdesign.cc/any-primeiro-estudo-de-caso-ux-ui-204291526615",
         thumbnail: ThumbnailImg
     }]
 
@@ -22,11 +17,11 @@ function Portfolio() {
         <Container>
             {cards.map((item, index) => (
                 <Card key={index}>
-                    <Title>{item.title}</Title>
-                    <Subtitle>{item.subtitle}</Subtitle>
                     <a href={item.link} rel="noopener noreferrer" target="_blank">
                         <Thumbnail src={item.thumbnail} />
                     </a>
+                    <Title>{item.title}</Title>
+                    <Subtitle>{item.subtitle}</Subtitle>
                 </Card>
             ))}
 

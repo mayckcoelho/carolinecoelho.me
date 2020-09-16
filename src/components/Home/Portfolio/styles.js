@@ -4,7 +4,7 @@ export const Container = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 50px; 
-    margin: auto;
+    margin: 200px auto 0;
 `
 
 export const Card = styled.div`
@@ -17,12 +17,12 @@ export const Card = styled.div`
 export const Title = styled.h4`
     font-family: 'Bree Serif', serif;
     font-size: 2rem;
+    margin: 3rem 0;
     color: #555555;
 `
 
 export const Subtitle = styled.p`
     font-size: 1.6rem;
-    margin: 3rem 0;
     color: #555555;
 `
 

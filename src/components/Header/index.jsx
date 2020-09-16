@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 
-import { Container, MenuSection, MenuToggle, Nav, List, Link, ListItem, Title } from './styles';
+import { Container, MenuSection, MenuToggle, Nav, List, ListItem } from './styles';
 
 function Header({ location }) {
     const [show, setShow] = useState(true)
@@ -48,20 +48,19 @@ function Header({ location }) {
                 </MenuToggle>
                 <Nav open={show}>
                     <List open={show}>
-                        <ListItem>
-                            <Link open={show} href="/" active={location.pathname === "/"}>
-                                Portifólio
-                                </Link>
+                        <ListItem open={show} active={location.pathname === "/" ? true : undefined} >
+                            <Link to="/" >
+                                Portfólio
+                            </Link>
                         </ListItem>
-                        <ListItem>
-                            <Link open={show} href="/about" active={location.pathname === "/about"}>
+                        <ListItem open={show} active={location.pathname === "/about" ? true : undefined}>
+                            <Link to="/about" >
                                 Sobre mim
-                                </Link>
+                            </Link>
                         </ListItem>
                     </List>
                 </Nav>
             </MenuSection>
-            <Title>Caroline Coelho</Title>
         </Container>
     );
 }

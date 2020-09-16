@@ -115,37 +115,27 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
     list-style: none;
-`
 
-export const Link = styled.a`
-    text-decoration: none;
-    color: ${props => props.active ? "#555555" : "#FFF"};
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    padding: 4.2rem 2.3rem;
-    transition: all 250ms linear 0s;
+    & > a {
+        text-decoration: none;
+        color: ${props => props.active ? "#555555" : "#FFF"};
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        padding: 4.2rem 2.3rem;
+        transition: all 250ms linear 0s;
 
-    :hover {
-        background: rgba(255, 255, 255, 0.15)
-    }
+        :hover {
+            background: rgba(255, 255, 255, 0.15)
+        }
 
-    @media (max-width: 768px) {
-        ${props => props.open} {
-            transition-duration: 0.5s;
-            font-size: 3rem;
-            line-height: 4rem;
-            display: block;
+        @media (max-width: 768px) {
+            ${props => props.open} {
+                transition-duration: 0.5s;
+                font-size: 3rem;
+                line-height: 4rem;
+                display: block;
+            }
         }
     }
-`
-
-export const Title = styled.h1`
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    font-size: 3.6rem;
-    color: white;
-    font-family: 'Satisfy', cursive;
 `

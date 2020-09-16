@@ -8,23 +8,20 @@ export const Title = styled.div`
     align-items: center;
 `
 
+export const Subtitle = styled.h4`
+    font-size: 2.4rem;
+    color: #555;
+    line-height: 2.9rem;
+
+    margin: 1.6rem 0 6.4rem;
+`
+
 export const Name = styled.h2`
     font-family: 'Bree Serif', serif;
     font-size: 3.6rem;
     color: #B9B5B5;
     margin-right: 1rem;
     margin-bottom: .7rem;
-
-    & a {
-        border-bottom: 1px dashed #B9B5B5;
-        color: #B9B5B5;
-        text-decoration: none;
-
-        :hover {
-            color: rgba(92, 92, 92, 0.57);
-            border-color: #F3A68C;
-        }
-    }
 `
 
 export const Description = styled.h3`

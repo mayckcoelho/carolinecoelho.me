@@ -4,38 +4,38 @@ import {
     Container,
     BioSection,
     Text,
-    BioImage
+    Title,
+    ResumeButton
 } from './styles';
-
-import Bio from "../../assets/images/bio.png";
 
 function About() {
     return (
         <Container>
             <BioSection>
+                <Title>Oi! Sou a Carol. Mãe, esposa e estudante de UX design.<br /><br /></Title>
                 <Text>
-                    Oi! Sou a Carol. Uma estudante de UX design. <br /><br />
-                    Trabalhei bastante tempo com atendimento ao cliente e e como Design
-                    Gráfico. Tinha 24 anos, e ainda não tinha encontrado o que me fazia
-                    feliz profissionalmente. No final de 2017 eu recebi o meu maior presente,
-                    minha filha Maju, enfim encontrei meu objetivo de vida.
-                    Por um tempo me dediquei 100% à ela e para esse momento me descobrindo mãe.
-                    Mas durou pouco tempo, um ano depois, lá estava eu procurando algo que me preenchece
-                    profissionalmente, depois de muito pensar, entrar em crise na meia idade algumas vezes,
-                    me veio uma luz (que eu também chamo de marido) e me questionou o motivo para eu
-                    não estudar e me dedicar ao UX Design e é aqui que começa a minha saga. <br /><br />
-                    Comecei a estudar UX no início de 2020 e venho desbravando esse mundo novo desde então.
-                    No começo eu ja achei que iria sair por ai fazendo telas bonitas para aplicativos
-                    e sites, afinal, eu já fazia artes legais quando trabalhava como design gráfico
-                    “vou tirar de letra" pensei no meu leve engano. Ao longo desses meses, eu comecei a
-                    entender que é muito, mais muito maior que isso, não quero de forma alguma desmerecer o
-                    trabalho de UI que tem um lugar especial no meu coração. Mas UX é sobre resolver problemas,
-                    é sobre fazer a diferença no dia a dia das pessoas, sobre dar o máximo para sanar qualquer
-                    dificuldade, por menor que ela pareça. E foi por isso que eu me encantei e é isso que
-                    me motiva a estudar, pesquisar, consumir o máximo de contúdo sobre metodologias.
-                    Finalmente encontrei algo que me faz feliz. Espero poder contribuir muito com o mundo como UX Designer.
+                    Venho de um background com atendimento ao cliente e como Design numa gráfica.
+                    Eu nem imaginava, mas aquele trabalho já estava me treinando para estar pronta
+                    para essa nova aventura que estou iniciando.<br /><br />
+                    No final de 2017 eu recebi o meu maior presente, a minha filha Maju.
+                    Por um tempo me dediquei 100% a ela e para esse momento me descobrindo mãe. Mas durou pouco tempo,
+                    um ano depois, lá estava eu procurando algo que me preenchesse profissionalmente.<br /><br />
+                    Depois de muito pensar, entrar e crises, me veio uma luz (que eu também chamo de marido) e me apresentou o UX,
+                    e me incentivou a estudar, conhecer, experimentar essa nova carreira, e é aqui que começa a minha saga.<br /><br />
                 </Text>
-                <BioImage src={Bio} />
+                <Title>A minha jornada em UX/UI Desing<br /><br /></Title>
+                <Text>
+                    Comecei a estudar UX/UI no início de 2020, e desde então vi o meu ponto de vista
+                    sobre o mundo mudar. Quando entendi que a experiência que não é sobre Apps ou Sites bonitos
+                    e legais, é sobre a experiência como um todo.<br /><br />
+                    Nove meses depois de entrar de cabeça nesse mundo, vejo como fiquei muito mais critica as
+                    minhas próprias experiências, desde atendimento em restaurantes, embalagens, compras e
+                    pós-compras e infinitas outras pequenas coisas do dia a dia. E foi assim que UX entrou no meu coração.<br /><br />
+                    Hoje eu posso dizer que é isso que eu quero. Ajudar pessoas a terem as melhores experiências
+                    em grandes e pequenas coisas, poder ajudar a simplificar o dia a dia dos usuários e assim
+                    agregar valor para as suas vidas.
+                </Text>
+                <ResumeButton>Currículo</ResumeButton>
             </BioSection>
         </Container>
     );

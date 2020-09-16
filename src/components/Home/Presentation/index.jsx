@@ -3,6 +3,7 @@ import React from 'react';
 import SocialLinks from '../../SocialLinks'
 import {
     Title,
+    Subtitle,
     Name,
     Description,
     People
@@ -12,9 +13,10 @@ function Presentation() {
     return (
         <section>
             <Title>
-                <Name>Olá! Eu sou a <a href="https://www.linkedin.com/in/carolinefcoelho/" rel="noopener noreferrer" target="_blank" >Caroline</a>.</Name>
+                <Name>Olá! Eu sou a Caroline Coelho.</Name>
                 <SocialLinks />
             </Title>
+            <Subtitle>UX/UI Design</Subtitle>
             <Description>
                 Busco aprender e criar as melhores experiências para <People>pessoas</People>.
             </Description>
