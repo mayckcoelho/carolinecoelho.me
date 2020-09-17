@@ -16,7 +16,7 @@ function Presentation() {
                 <Name>Olá! Eu sou a Caroline Coelho.</Name>
                 <SocialLinks />
             </Title>
-            <Subtitle>UX/UI Design</Subtitle>
+            <Subtitle>UX/UI Design Junior</Subtitle>
             <Description>
                 Busco aprender e criar as melhores experiências para <People>pessoas</People>.
             </Description>

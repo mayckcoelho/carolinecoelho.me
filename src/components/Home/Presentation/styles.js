@@ -6,6 +6,10 @@ export const Title = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+    }
 `
 
 export const Subtitle = styled.h4`

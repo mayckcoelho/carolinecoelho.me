@@ -18,7 +18,7 @@ function Portfolio() {
             {cards.map((item, index) => (
                 <Card key={index}>
                     <a href={item.link} rel="noopener noreferrer" target="_blank">
-                        <Thumbnail src={item.thumbnail} />
+                        <Thumbnail src={item.thumbnail} alt={item.title} />
                     </a>
                     <Title>{item.title}</Title>
                     <Subtitle>{item.subtitle}</Subtitle>

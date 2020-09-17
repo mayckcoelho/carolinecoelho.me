@@ -28,10 +28,14 @@ export const Text = styled.p`
 export const ResumeButton = styled.button`
     border: 2px solid #F3A68C;
     border-radius: 7px;
-    font-size: 1.6rem;
-    color: #F3A68C;
     padding: .5rem 1rem;
     margin-top: 4.2rem;
     background-color: #fff;
     cursor: pointer;
+
+    & > a{
+        font-size: 1.6rem;
+        color: #F3A68C;
+        text-decoration: none;
+    }
 `

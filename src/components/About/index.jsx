@@ -35,7 +35,7 @@ function About() {
                     em grandes e pequenas coisas, poder ajudar a simplificar o dia a dia dos usuários e assim
                     agregar valor para as suas vidas.
                 </Text>
-                <ResumeButton>Currículo</ResumeButton>
+                <ResumeButton><a href={`${process.env.PUBLIC_URL}/curriculo.pdf`} target="_blank">Currículo</a></ResumeButton>
             </BioSection>
         </Container>
     );
