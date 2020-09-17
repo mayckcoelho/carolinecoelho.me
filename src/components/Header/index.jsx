@@ -48,12 +48,12 @@ function Header({ location }) {
                 </MenuToggle>
                 <Nav open={show}>
                     <List open={show}>
-                        <ListItem open={show} onClick={toggleMenu} active={location.pathname === "/"} >
+                        <ListItem open={show} onClick={() => { if (!show) toggleMenu(); }} active={location.pathname === "/"} >
                             <Link to="/" >
                                 Portfólio
                             </Link>
                         </ListItem>
-                        <ListItem open={show} onClick={toggleMenu} active={location.pathname === "/about"}>
+                        <ListItem open={show} onClick={() => { if (!show) toggleMenu(); }} active={location.pathname === "/about"}>
                             <Link to="/about" >
                                 Sobre mim
                             </Link>
